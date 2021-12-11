@@ -4,11 +4,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sass": "sass src/stylesheets:src/css --watch --no-source-map"
   },
   "dependencies": {
+    "node-sass": "^7.0.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "sass": "^1.45.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.33",
