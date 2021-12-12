@@ -2,32 +2,23 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
+$text-font-stack: 'Space Mono', monospace;;
 
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$primary-color:  #009933;
 
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$title-color:  #00ff55;
 
-$text-color: rgb(34, 34, 34) !default;
+$bg-color: black;
 
-$brand-color: rgb(229, 0, 80) !default;
-
-$light-grey: rgb(237, 237, 237) !default;
-
-
-$mid-grey: rgb(153, 153, 153) !default;
-
-
-$dark-grey: rgb(68, 68, 68) !default;
-
-
-$max-width: 1180px !default;
+$max-width: 1180px;
 
 $breakpoints: (
   'small': 320px,
   'medium': 768px,
   'large': 1024px,
-) !default;
+);
+
 
 
 $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
+$base-url: '/assets/';

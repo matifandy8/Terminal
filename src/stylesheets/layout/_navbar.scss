@@ -1,3 +1,15 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the Navbar of the site/application.
 // -----------------------------------------------------------------------------
+@use  '../abstracts/variables';
+
+.navbar{
+    border-bottom: 2px dotted variables.$primary-color;
+    h1{
+        color: variables.$title-color;
+        font-size: 2em;
+        line-height: 1.25em;
+        margin: 0;
+        padding: 0;
+    }
+}

@@ -1,6 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
+@use  '../abstracts/variables';
 
 /**
  * Set up a decent box model on the root element
@@ -9,10 +10,11 @@ html {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  font-family: variables.$text-font-stack;
 }
 body{
-  background-color: black;
-  color: green;
+  background-color: variables.$bg-color;
+  height: 100%;
 }
 
 /**
