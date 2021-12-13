@@ -1,3 +1,33 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+@use  '../abstracts/variables';
+
+
+.home {
+    color: variables.$text-color;
+
+    .terminal{
+        margin: 10px;
+        .terminal__form{
+            display: flex;
+        }
+        span{
+            color: variables.$text-color;
+            font-size: 1.2rem;
+        }
+        input{
+            border: none;
+            background: none;
+            color: variables.$text-color;
+            font-family: monospace;
+            font-size: 1.2rem;
+            letter-spacing: .1rem;
+            text-shadow: 0 0 0.2rem rgba(255,255,255,0.3);
+            width: 100%;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
