@@ -4,12 +4,26 @@
 @use  '../abstracts/variables';
 
 .navbar{
+    display: flex;
+    justify-content: space-between;
     border-bottom: 2px dotted variables.$primary-color;
     h1{
         color: variables.$title-color;
-        font-size: 2em;
+        font-size: 1.5em;
         line-height: 1.25em;
-        margin: 0;
+        margin: 5px;
         padding: 0;
+    }
+    .navbar-links{
+        a{
+            :hover{
+                transform: scale(1.2);
+            }
+        }
+        img{
+            height: 1.7em;
+            width: 1.7em;    
+            margin: 5px;
+        }
     }
 }
