@@ -4,4 +4,4 @@
 
 
 ---- Technologies -------
-React,Typescript and Sass
+React,Typescript and Sass with 7-1 Pattern https://sass-guidelin.es/#the-7-1-pattern
