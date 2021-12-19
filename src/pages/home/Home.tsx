@@ -43,7 +43,9 @@ const Home = () => {
         </form>
         </div>
         <div className="terminal__output">
-          {tag === "about" ? <AboutMe /> : ""}
+          {tag === "ab" ? <AboutMe /> : ""}
+          {tag === "pjs" ? <p>Projects</p> : ""}
+          {tag === "ct" ? <p>Contact</p> : ""}
         </div>
       </div>
     </div>
