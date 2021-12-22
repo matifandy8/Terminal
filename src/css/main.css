@@ -479,8 +479,9 @@ a {
 .home .terminal {
   margin: 10px;
 }
-.home .terminal .terminal__form {
+.home .terminal .terminal__form form {
   display: flex;
+  width: 100%;
 }
 .home .terminal span {
   color: #008f30;

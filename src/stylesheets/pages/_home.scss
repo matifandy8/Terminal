@@ -10,7 +10,10 @@
     .terminal{
         margin: 10px;
         .terminal__form{
-            display: flex;
+            form{
+                display: flex;
+                width: 100%;
+            }
         }
         span{
             color: variables.$text-color;

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AboutMe from "./AboutMe";
+import Contact from "./Contact";
 import Projects from "./Projects";
 
 const Home = () => {
@@ -31,8 +32,8 @@ const Home = () => {
     <div className="home">
       <div className="terminal">
         <div className="terminal__form">
-          <span>$</span>
-          <form onSubmit={onSubmitForm}>
+          <form onSubmit={onSubmitForm}>    
+            <span>$</span>
             <input
               value={value}
               onChange={handleChange}
@@ -44,7 +45,7 @@ const Home = () => {
         <div className="terminal__output">
           {tag === "ab" ? <AboutMe /> : ""}
           {tag === "pjs" ? <Projects /> : ""}
-          {tag === "ct" ? <p>Contact</p> : ""}
+          {tag === "ct" ? <Contact /> : ""}
         </div>
       </div>
     </div>
