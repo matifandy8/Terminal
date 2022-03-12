@@ -3,7 +3,10 @@
 
 .projects{
     margin: 20px;
-     
+    width: 50%;
+    .project{
+       padding: 10px;
+    }
     img{
         width: 350px;
     }

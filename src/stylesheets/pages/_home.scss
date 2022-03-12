@@ -1,36 +1,65 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-@use  '../abstracts/variables';
-
+@use "../abstracts/variables";
 
 .home {
-    color: variables.$text-color;
+  color: variables.$text-color;
 
-    .terminal{
-        margin: 10px;
-        .terminal__form{
-            form{
-                display: flex;
-                width: 100%;
-            }
-        }
-        span{
-            color: variables.$text-color;
-            font-size: 1.2rem;
-        }
-        input{
-            border: none;
-            background: none;
-            color: variables.$text-color;
-            font-family: monospace;
-            font-size: 1.2rem;
-            letter-spacing: .1rem;
-            text-shadow: 0 0 0.2rem rgba(255,255,255,0.3);
-            width: 100%;
-            &:focus{
-                outline: none;
-            }
-        }
+  .terminal {
+    margin: 10px;
+    .terminal__form {
+      form {
+        display: flex;
+        width: 100%;
+      }
     }
+    span {
+      color: variables.$text-color;
+      font-size: 1.2rem;
+    }
+    input {
+      border: none;
+      background: none;
+      color: variables.$text-color;
+      font-family: monospace;
+      font-size: 1.2rem;
+      letter-spacing: 0.1rem;
+      text-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.3);
+      width: 100%;
+      &:focus {
+        outline: none;
+      }
+    }
+    .terminal__output {
+      margin-top: 10px;
+      .title {
+        border-bottom: 2px dotted variables.$primary-color;
+        padding: 20px 0px;
+         h1 {
+           font-size: 1.2rem;
+           width: 50%;
+         }
+         p {
+           width: 50%;
+         }
+      }
+      h1 {
+        margin-bottom: 10px;
+        color: variables.$text-color;
+        font-size: 1.6rem;
+        font-family: monospace;
+        letter-spacing: 0.1rem;
+        text-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.3);
+      }
+      p {
+        margin-bottom: 10px;
+        color: variables.$text-color;
+        font-size: 1.2rem;
+        font-family: monospace;
+        letter-spacing: 0.1rem;
+        text-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
 }

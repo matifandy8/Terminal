@@ -466,7 +466,7 @@ a {
   color: #008f30;
   font-size: 1.2rem;
   font-weight: bold;
-  padding: 0;
+  padding: 5px 10px;
   margin: 0;
 }
 .footer .btn:hover {
@@ -500,9 +500,43 @@ a {
 .home .terminal input:focus {
   outline: none;
 }
+.home .terminal .terminal__output {
+  margin-top: 10px;
+}
+.home .terminal .terminal__output .title {
+  border-bottom: 2px dotted #009933;
+  padding: 20px 0px;
+}
+.home .terminal .terminal__output .title h1 {
+  font-size: 1.2rem;
+  width: 50%;
+}
+.home .terminal .terminal__output .title p {
+  width: 50%;
+}
+.home .terminal .terminal__output h1 {
+  margin-bottom: 10px;
+  color: #008f30;
+  font-size: 1.6rem;
+  font-family: monospace;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.3);
+}
+.home .terminal .terminal__output p {
+  margin-bottom: 10px;
+  color: #008f30;
+  font-size: 1.2rem;
+  font-family: monospace;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.3);
+}
 
 .projects {
   margin: 20px;
+  width: 50%;
+}
+.projects .project {
+  padding: 10px;
 }
 .projects img {
   width: 350px;
@@ -516,4 +550,12 @@ a {
   background-color: #008f30;
   padding: 5px;
   color: #000;
+}
+
+.about {
+  width: 50%;
+}
+
+.contact {
+  width: 50%;
 }

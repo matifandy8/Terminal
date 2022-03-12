@@ -25,10 +25,9 @@ const Projects = () => {
 
   return (
       <div className="projects">    
-        <h1>Projects</h1>
         {projects?.map((project) => (
           <div className="project" key={project.id}>
-            <h2>{project.name}</h2>
+            <h3>{project.name}</h3>
             <p>{project.subtitle}</p>
             <div className="project__image">
               <img src={project.image} alt={project.name} />

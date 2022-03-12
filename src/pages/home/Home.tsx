@@ -43,6 +43,11 @@ const Home = () => {
           </form>
         </div>
         <div className="terminal__output">
+          <div className="title">
+            <h1 >Hi, This is my portfolio interactive terminal with commands in help menu to navigate through the website and know more about me.</h1>
+          <p>Used technologies React, Typescript, Sass</p>
+          </div>
+          
           {tag === "ab" ? <AboutMe /> : ""}
           {tag === "pjs" ? <Projects /> : ""}
           {tag === "ct" ? <Contact /> : ""}
