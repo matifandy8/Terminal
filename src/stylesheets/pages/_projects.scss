@@ -1,5 +1,20 @@
 @use  '../abstracts/variables';
  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .projects {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    font-family: sans-serif;
+  }
 
 .projects{
     margin: 20px;
