@@ -1,0 +1,18 @@
+.skills{
+    width: 50%;
+    padding-bottom: 50px;
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skill{
+        padding: 10px;
+       
+        img{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+
+        }
+    }
+}

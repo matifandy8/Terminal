@@ -2,6 +2,7 @@ import { useState } from "react";
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 import Projects from "./Projects";
+import Skills from "./Skills";
 
 const Home = () => {
   const [value, setValue] = useState("");
@@ -53,12 +54,14 @@ const Home = () => {
             <p>
               Run the commands to see my information:
               <p>about me (ab)</p>
+              <p>skills (sks)</p>
               <p>projects (pjs)</p>
               <p>contact (ct)</p>
             </p>
           </div>
 
           {tag === "ab" ? <AboutMe /> : ""}
+          {tag === "sks" ? <Skills /> : ""}
           {tag === "pjs" ? <Projects /> : ""}
           {tag === "ct" ? <Contact /> : ""}
         </div>
